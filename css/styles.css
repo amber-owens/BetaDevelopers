@@ -1,9 +1,19 @@
 body {
-  background image: url("Betaclublogo.png");\
+  background-color: yellow;
 }
 li {
   display: inline;
   backgroud-image: url("Betaclublogo.png");
+}
+
+div.navbar {
+  font-size: large;
+  word-spacing: 25px;
+}
+
+h1 {
+  text-align: center;
+
 }
 
   ul {
