@@ -1,14 +1,18 @@
 body {
-  background-color: yellow;
+  background-color: maroon;
+
 }
+
 li {
   display: inline;
   backgroud-image: url("Betaclublogo.png");
+  background-size: auto;
+
 }
 
 div.navbar {
   font-size: large;
-  wordss-spacing: 25px;
+  words-spacing: 25px;
 }
 
 h1 {
@@ -40,3 +44,19 @@ h1 {
   li a:hover {
       background-color: #111;
   }
+
+  div.transbox {
+  margin: 10px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  width: 999px;
+  height: 100px;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
