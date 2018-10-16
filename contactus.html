@@ -107,3 +107,125 @@
 </body>
 
 </html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+form {
+    border: 3px solid #f1f1f1;
+    font-family: Arial;
+}
+
+.container {
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    margin-top: 16px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+</style>
+<body>
+
+
+  <br>
+
+  <div class="row">
+    <div class="column" style="background-color:pink;">
+      <h2>Number</h2>
+      <p>731-427-3501</p>
+    </div>
+    <div class="column" style="background-color:gold;">
+      <h2>Fax Number</h2>
+      <p>731-427-3587</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column" style="background-color: pink;">
+      <h2>Address</h2>
+      <p>179 Allen Ave, 38301</p>
+    </div>
+    <div class="column" style="background-color:gold;">
+      <h2>Email</h2>
+      <p>Lrmanley@jmcss.org</p>
+    </div>
+  </div>
+
+  <script>
+  // Get the elements with class="column"
+  var elements = document.getElementsByClassName("column");
+
+  // Declare a loop variable
+  var i;
+
+
+  // Grid View
+  function gridView() {
+    for (i = 0; i < elements.length; i++) {
+      elements[i].style.width = "50%";
+    }
+  }
+
+  /* Optional: Add active class to the current button (highlight it) */
+  var container = document.getElementById("btnContainer");
+  var btns = container.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+  </script>
+
+
+<h2>CSS Newsletter</h2>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h2>Subscribe to Our Mailing List</h2>
+    <p>Lorem ipsum text about why you should subscribe to our newsletter blabla. Lorem ipsum text about why you should subscribe to our newsletter blabla.</p>
+  </div>
+
+  <div class="container" style="background-color:white">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+
+</body>
+</html>
