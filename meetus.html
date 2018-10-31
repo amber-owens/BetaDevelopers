@@ -1,223 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-<title>Meet Us</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css">
-</style>
-
-<div class="header">
-  <h1>Meet Us</h1>
-  <p>"Let Us Lead By Serving Others."</p>
-</div>
-
 
 <head>
+
+  <title>Meet Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
   <div class="header">
-  <img src="Betaclublogo.png" alt="logo" />
-</div>
-
-
-
-<style>
-* {
-    box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-.header {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
-}
-
-.topnav {
-    overflow: hidden;
-    background-color: black;
-}
-
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-</style>
+    <h1>Meet Us</h1>
+    <p>"Let Us Lead By Serving Others."</p>
+    <img src="Betaclublogo.png" alt="logo" />
+  </div>
 </head>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: black;
+      }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+    </style>
+  </head>
+
 <body>
 
-<div class="header">
-</div>
+  <div class="topnav">
+    <a href="./aboutus.html">About Us</a>
+    <a href="./joinus.html">Join Us</a>
+    <a href="./contactus.html">Contact Us</a>
+    <a href="./meetus.html">Meet Us</a>
+    <a href="./donate.html">Donate</a>
+    <a href="./index.html">Home</a>
+  </div>
 
 
-<div class="topnav">
-  <a href="./aboutus.html">About Us</a>
-  <a href="./joinus.html">Join Us</a>
-  <a href="./contactus.html">Contact Us</a>
-  <a href="./meetus.html">Meet Us</a>
-  <a href="./donate.html">Donate</a>
-  <a href="./index.html">Home</a>
-</div>
+  <head>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      body {
+        font-family: Verdana, sans-serif;
+      }
+
+      .month {
+        padding: 70px 25px;
+        width: 100%;
+        background: maroon;
+        text-align: center;
+      }
+
+      .month ul {
+        margin: 0;
+        padding: 0;
+      }
 
 
-<head>
+      .month ul li {
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
 
-<style>
-* {box-sizing: border-box;}
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
+      .month .prev {
+        float: left;
+        padding-top: 10px;
+      }
 
-.month {
-    padding: 70px 25px;
-    width: 100%;
-    background: maroon;
-    text-align: center;
-}
+      .month .next {
+        float: right;
+        padding-top: 10px;
+      }
 
-.month ul {
-    margin: 0;
-    padding: 0;
-}
+      .weekdays {
+        margin: 0;
+        padding: 10px 0;
+        background-color: #000000;
+      }
 
+      .weekdays li {
+        display: inline-block;
+        width: 13.6%;
+        color: #FFFFFF;
+        text-align: center;
+      }
 
-.month ul li {
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
+      .days {
+        padding: 10px 0;
+        background: #FFFFFF;
+        margin: 0;
+      }
 
-.month .prev {
-    float: left;
-    padding-top: 10px;
-}
+      .days li {
+        list-style-type: none;
+        display: inline-block;
+        width: 13.6%;
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: 12px;
+        color: #777;
+      }
 
-.month .next {
-    float: right;
-    padding-top: 10px;
-}
+      .days li .active {
+        padding: 5px;
+        background: maroon;
+        color: white !important
+      }
 
-.weekdays {
-    margin: 0;
-    padding: 10px 0;
-    background-color: #000000;
-}
+      /* Add media queries for smaller screens */
+      @media screen and (max-width:720px) {
 
-.weekdays li {
-    display: inline-block;
-    width: 13.6%;
-    color: #FFFFFF;
-    text-align: center;
-}
+        .weekdays li,
+        .days li {
+          width: 13.1%;
+        }
+      }
 
-.days {
-    padding: 10px 0;
-    background: #FFFFFF;
-    margin: 0;
-}
+      @media screen and (max-width: 420px) {
 
-.days li {
-    list-style-type: none;
-    display: inline-block;
-    width: 13.6%;
-    text-align: center;
-    margin-bottom: 5px;
-    font-size:12px;
-    color: #777;
-}
+        .weekdays li,
+        .days li {
+          width: 12.5%;
+        }
 
-.days li .active {
-    padding: 5px;
-    background: maroon;
-    color: white !important
-}
+        .days li .active {
+          padding: 2px;
+        }
+      }
 
-/* Add media queries for smaller screens */
-@media screen and (max-width:720px) {
-    .weekdays li, .days li {width: 13.1%;}
-}
+      @media screen and (max-width: 290px) {
 
-@media screen and (max-width: 420px) {
-    .weekdays li, .days li {width: 12.5%;}
-    .days li .active {padding: 2px;}
-}
+        .weekdays li,
+        .days li {
+          width: 12.2%;
+        }
+      }
+    </style>
+  </head>
 
-@media screen and (max-width: 290px) {
-    .weekdays li, .days li {width: 12.2%;}
-}
-</style>
-</head>
-<body>
+  <body>
 
-<h1>Upcoming Events</h1>
+    <h1>Upcoming Events</h1>
 
-<div class="month">
-  <ul>
-    <li class="prev">&#10094;</li>
-    <li class="next">&#10095;</li>
-    <li>
-      October<br>
-      <span style="font-size:18px">2018</span>
-    </li>
-  </ul>
-</div>
+    <div class="month">
+      <ul>
+        <li class="prev">&#10094;</li>
+        <li class="next">&#10095;</li>
+        <li>
+          October<br>
+          <span style="font-size:18px">2018</span>
+        </li>
+      </ul>
+    </div>
 
-<ul class="weekdays">
-  <li>Mo</li>
-  <li>Tu</li>
-  <li>We</li>
-  <li>Th</li>
-  <li>Fr</li>
-  <li>Sa</li>
-  <li>Su</li>
-</ul>
+    <ul class="weekdays">
+      <li>Mo</li>
+      <li>Tu</li>
+      <li>We</li>
+      <li>Th</li>
+      <li>Fr</li>
+      <li>Sa</li>
+      <li>Su</li>
+    </ul>
 
-<ul class="days">
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li>8</li>
-  <li>9</li>
-  <li>10</li>
-  <li>11</li>
-  <li>12</li>
-  <li>13</li>
-  <li>14</li>
-  <li>15</li>
-  <li>16</li>
-  <li>17</li>
-  <li>18</li>
-  <li>19</li>
-  <li>20</li>
-  <li>21</li>
-  <li>22</li>
-  <li>23</li>
-  <li><span class="active">24</span></li>
-  <li>25</li>
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-  <li>29</li>
-  <li>30</li>
-  <li>31</li>
-</ul>
+    <ul class="days">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+      <li>16</li>
+      <li>17</li>
+      <li>18</li>
+      <li>19</li>
+      <li>20</li>
+      <li>21</li>
+      <li>22</li>
+      <li>23</li>
+      <li><span class="active">24</span></li>
+      <li>25</li>
+      <li>26</li>
+      <li>27</li>
+      <li>28</li>
+      <li>29</li>
+      <li>30</li>
+      <li>31</li>
+    </ul>
 
-</body>
+  </body>
+
 </html>
