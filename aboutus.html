@@ -16,6 +16,10 @@
 </head>
 
 <style>
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     margin: 0;
   }
@@ -35,7 +39,6 @@
     background-color: black;
   }
 
-  /* Style the topnav links */
   .topnav a {
     float: left;
     display: block;
@@ -45,27 +48,23 @@
     text-decoration: none;
   }
 
-  /* Change color on hover */
   .topnav a:hover {
     background-color: #ddd;
     color: black;
   }
 
-  /* Create three equal columns that floats next to each other */
   .column {
     float: left;
     width: 33.33%;
     padding: 15px;
   }
 
-  /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
 
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
   @media screen and (max-width:600px) {
     .column {
       width: 100%;
@@ -74,14 +73,8 @@
 </style>
 </head>
 
-<style>
-  * {
-    box-sizing: border-box;
-  }
-</style>
 
 <body>
-
 
   <div class="topnav">
     <a href="./aboutus.html">About Us</a>
@@ -90,7 +83,6 @@
     <a href="./meetus.html">Meet Us</a>
     <a href="./donate.html">Donate</a>
     <a href="./index.html">Home</a>
-
   </div>
 
   <div class="row">
