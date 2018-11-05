@@ -8,47 +8,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css" type="text/css" />
   <link rel="stylesheet" href="bootstrap.css" type="text/css" />
-
-
-  <div class="header">
-    <h1>Donate</h1>
-    <p>"Let Us Lead By Serving Others."</p>
-    <img src="Betaclublogo.png" alt="logo" />
-  </div>
 </head>
 
+<div class="header">
+  <h1>Donate</h1>
+  <p>"Let Us Lead By Serving Others."</p>
+  <img src="Betaclublogo.png" alt="logo" />
+</div>
+</head>
+
+<body>
 
   <style>
     body {
   margin: 0;
 }
 
-/* Style the header */
 .header {
     background-color: #f1f1f1;
     padding: 20px;
     text-align: center;
 }
-</style>
-</head>
 
-  <style>
-    * {
+  * {
     box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-}
 
-/* Style the header */
-.header {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Style the top navigation bar */
 .topnav {
     overflow: hidden;
     background-color: black;
@@ -67,18 +53,6 @@ body {
 .topnav a:hover {
     background-color: #ddd;
     color: black;
-}
-</style>
-</head>
-
-<body>
-
-  <style>
-
-    .header {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
 }
 
 #navbar {
@@ -120,21 +94,20 @@ body {
   padding-top: 60px;
 }
 </style>
-  </head>
 
-  <body>
 
-    <div id="navbar">
-      <a href="./aboutus.html">About Us</a>
-      <a href="./joinus.html">Join Us</a>
-      <a href="./contactus.html">Contact Us</a>
-      <a href="./meetus.html">Meet Us</a>
-      <a href="./donate.html">Donate</a>
-      <a href="./index.html">Home</a>
-    </div>
 
-    <script>
-      window.onscroll = function() {myFunction()};
+  <div id="navbar">
+    <a href="./aboutus.html">About Us</a>
+    <a href="./joinus.html">Join Us</a>
+    <a href="./contactus.html">Contact Us</a>
+    <a href="./meetus.html">Meet Us</a>
+    <a href="./donate.html">Donate</a>
+    <a href="./index.html">Home</a>
+  </div>
+
+  <script>
+    window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
@@ -148,15 +121,13 @@ function myFunction() {
   }
 }
 </script>
-    </style>
 
-    <style>
+  <style>
+    * {
+      font-family: Arial;
+    }
 
-      body {font-family: Verdana, sans-serif;}
-</style>
-
-    <style>
-      .dropbtn {
+    .dropbtn {
     background-color: orange;
     color: white;
     padding: 16px;
@@ -191,23 +162,23 @@ function myFunction() {
 
 .dropdown:hover .dropbtn {background-color: black;}
 </style>
-    </head>
 
-    <div class="dropdown">
-      <br><br>
-      <button class="dropbtn">Select Amount</button>
-      <div class="dropdown-content">
-        <a href="#">$25.00</a>
-        <a href="#">$50.00</a>
-        <a href="#">$100.00</a>
-        <a href="#">$250.00</a>
-        <a href="#">$500.00</a>
-      </div>
+
+  <div class="dropdown">
+    <br><br>
+    <button class="dropbtn">Select Amount</button>
+    <div class="dropdown-content">
+      <a href="#">$25.00</a>
+      <a href="#">$50.00</a>
+      <a href="#">$100.00</a>
+      <a href="#">$250.00</a>
+      <a href="#">$500.00</a>
     </div>
+  </div>
 
 
-    <style>
-      body {
+  <style>
+    body {
   font-family: Arial;
   font-size: 17px;
   padding: 8px;
@@ -311,122 +282,121 @@ span.price {
   }
 }
 </style>
-    </head>
+  </head>
 
-    <body>
+  <body>
 
-      <br><br>
-      <div class="row">
-        <div class="col-75">
-          <div class="container">
-            <form action="/action_page.php">
+    <br><br>
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <form action="/action_page.php">
 
-              <div class="row">
-                <div class="col-50">
-                  <h3>Billing Address</h3>
-                  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                  <input type="text" id="email" name="email" placeholder="john@example.com">
-                  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                  <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-                  <label for="city"><i class="fa fa-institution"></i> City</label>
-                  <input type="text" id="city" name="city" placeholder="New York">
+            <div class="row">
+              <div class="col-50">
+                <h3>Billing Address</h3>
+                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" placeholder="john@example.com">
+                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                <label for="city"><i class="fa fa-institution"></i> City</label>
+                <input type="text" id="city" name="city" placeholder="New York">
 
-                  <div class="row">
-                    <div class="col-50">
-                      <label for="state">State</label>
-                      <input type="text" id="state" name="state" placeholder="NY">
-                    </div>
-                    <div class="col-50">
-                      <label for="zip">Zip</label>
-                      <input type="text" id="zip" name="zip" placeholder="10001">
-                    </div>
+                <div class="row">
+                  <div class="col-50">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" placeholder="NY">
+                  </div>
+                  <div class="col-50">
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" name="zip" placeholder="10001">
                   </div>
                 </div>
+              </div>
 
-                <div class="col-50">
-                  <h3>Payment</h3>
-                  <label for="cname">Name on Card</label>
-                  <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-                  <label for="ccnum">Credit card number</label>
-                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                  <label for="expmonth">Exp Month</label>
-                  <input type="text" id="expmonth" name="expmonth" placeholder="September">
-                  <div class="row">
-                    <div class="col-50">
-                      <label for="expyear">Exp Year</label>
-                      <input type="text" id="expyear" name="expyear" placeholder="2018">
-                    </div>
-                    <div class="col-50">
-                      <label for="csc">CSC</label>
-                      <input type="text" id="csc" name="csc" placeholder="123" </div> </div> </div> <input type="submit" value="GIVE / SUBMIT" class="btn">
+              <div class="col-50">
+                <h3>Payment</h3>
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                <div class="row">
+                  <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+                  </div>
+                  <div class="col-50">
+                    <label for="csc">CSC</label>
+                    <input type="text" id="csc" name="csc" placeholder="123" </div> </div> </div> <input type="submit" value="GIVE / SUBMIT" class="btn">
 
-            </form>
-          </div>
+          </form>
         </div>
+      </div>
 
-        </form>
+      </form>
 
-        <style>
-          div {
-            text-align: center;
-          }
+      <style>
+        div {
+          text-align: center;
+        }
 
-          h1 {
-            color: black;
-            font-family: verdana;
-            font-size: 245%;
-            text align: center;
-          }
-        </style>
+        h1 {
+          color: black;
+          font-family: arial;
+          text align: center;
+        }
+      </style>
 
-        <body>
+      <body>
 
-          <h1>THANK YOU!</h1>
-
-
-          <footer>
-            <style>
-              .fa {
-                padding: 20px;
-                font-size: 30px;
-                width: 50px;
-                text-align: center;
-                text-decoration: none;
-                margin: 5px 2px;
-              }
-
-              .fa:hover {
-                opacity: 0.7;
-              }
+        <h1>THANK YOU!</h1>
 
 
-              .fa-twitter {
-                background: #55ACEE;
-                color: white;
-              }
+        <footer>
+          <style>
+            .fa {
+              padding: 20px;
+              font-size: 30px;
+              width: 50px;
+              text-align: center;
+              text-decoration: none;
+              margin: 5px 2px;
+            }
 
-              .fa-google {
-                background: #dd4b39;
-                color: white;
-              }
-
-
-              .fa-instagram {
-                background: #125688;
-                color: white;
-              }
-            </style>
-            </head>
-
-            <body>
-              <a href="#" class="fa fa-twitter"></a>
-              <a href="#" class="fa fa-google"></a>
-              <a href="#" class="fa fa-instagram"></a>
-          </footer>
+            .fa:hover {
+              opacity: 0.7;
+            }
 
 
-        </body>
+            .fa-twitter {
+              background: #55ACEE;
+              color: white;
+            }
+
+            .fa-google {
+              background: #dd4b39;
+              color: white;
+            }
+
+
+            .fa-instagram {
+              background: #125688;
+              color: white;
+            }
+          </style>
+          </head>
+
+          <body>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </footer>
+
+
+      </body>
 
 </html>
