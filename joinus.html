@@ -87,6 +87,237 @@
     </div>
   </div>
 
-</body>
+  <script>
+    window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else
+  {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+  <style>
+    * {
+      font-family: Arial;
+    }
+
+    .dropbtn {
+    background-color: orange;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: center;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color:#ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: black;}
+</style>
+
+
+
+  <style>
+    body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #21256d;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #459ea0;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+  </head>
+
+  <body>
+
+    <br><br>
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <form action="/action_page.php">
+
+            <div class="row">
+              <div class="col-50">
+                <h3>Personal Information</h3>
+                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                <input type="text" id="fname" name="fullname" placeholder="Johnny Depp">
+                <label for="email"><i class="fa fa-envelope"></i> Date of Birth</label>
+                <input type="text" id="date" name="email" placeholder="4/20/18">
+                <label for="gen"><i class="fa fa-address-card-o"></i> Gender</label>
+                <input type="text" id="adr" name="address" placeholder="M/F/Other">
+                <label for="address"><i class="fa fa-institution"></i> Address</label>
+                <input type="text" id="city" name="city" placeholder="542 W. 15th Street">
+                <label for="ccnum">Cell Number</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="731-555-5556">
+                <label for="expmonth">Home Phone</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="731-555-5556">
+                <label for="gpa">GPA</label>
+                <input type="text" id="GPA" name="gpa" placeholder="4.0">
+
+                <h3>Emergency Contact</h3>
+                <label for="cname">Full Name</label>
+                <input type="text" id="cname" name="cardname" placeholder="Johnny Depp">
+                <label for="email"><i class="fa fa-envelope"></i> Relation</label>
+                <input type="text" id="date" name="email" placeholder="Mother/Father/etc..">
+                <label for="adr"><i class="fa fa-address-card-o"></i> Cell Number</label>
+                <input type="text" id="adr" name="address" placeholder="731-555-5556">
+                <label for="gender"><i class="fa fa-institution"></i> Work Phone</label>
+                <input type="text" id="city" name="city" placeholder="731-555-5556">
+
+                <h3>Secondary Contact</h3>
+                  <label for="cname">Full Name</label>
+                  <input type="text" id="cname" name="cardname" placeholder="Johnny Depp">
+                  <label for="email"><i class="fa fa-envelope"></i> Relation</label>
+                  <input type="text" id="date" name="email" placeholder="Mother/Father/etc..">
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Cell Number</label>
+                  <input type="text" id="adr" name="address" placeholder="731-555-5556">
+                  <label for="gender"><i class="fa fa-institution"></i> Work Phone</label>
+                  <input type="text" id="city" name="city" placeholder="731-555-5556">
+
+                 <input type="submit" value="SUBMIT APPLICATION" class="btn">
+
+          </form>
+        </div>
+      </div>
+
+      </form>
+
+      <style>
+        div {
+          text-align: center;
+        }
+
+        h1 {
+          color: black;
+          font-family: arial;
+          text align: center;
+        }
+      </style>
+
 
 </html>
