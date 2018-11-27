@@ -9,9 +9,10 @@
   <link rel="stylesheet" href="style.css" type="text/css" />
 
   <div class="header">
-    <h1>Join Us</h1>
-    <p>"Let Us Lead By Serving Others."</p>
+    <h1><font color= "#ffcc00">JOIN US</font></h1>
     <img src="Betaclublogo.png" alt="logo" />
+    
+    <p><font color="#ffcc00">"Let Us Lead By Serving Others."</font></p>
   </div>
 </head>
 
@@ -29,10 +30,8 @@
   }
 
   .header {
-   background-image: url("meer.jpg");
       padding: 20px;
       text-align: center;
-      background-image: url("goldy.jpg");
       height: 550px;
   }
 
@@ -59,7 +58,7 @@
 
 <style>
   .header {
-background-color: #f1f1f1;
+background-color: black;
 padding: 30px;
 text-align: center;
 }
@@ -198,12 +197,9 @@ if (window.pageYOffset >= sticky) {
 </style>
 
 
-
   <style>
     body {
   font-family: Arial;
-  font-size: 17px;
-  padding: 8px;
 }
 
 * {
@@ -294,15 +290,15 @@ span.price {
   color: grey;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
-@media (max-width: 800px) {
-  .row {
-    flex-direction: column-reverse;
-  }
-  .col-25 {
-    margin-bottom: 20px;
+<style>
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+    display: block;
   }
 }
+</style>
+
 </style>
   </head>
 
