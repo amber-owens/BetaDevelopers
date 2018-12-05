@@ -127,7 +127,7 @@
   .days li .active {
     padding: 5px;
     background: maroon;
-    color: white !important
+    color: white;
   }
 
   /* Add media queries for smaller screens */
@@ -175,7 +175,7 @@
 
   <body>
 
-    <h1>Upcoming Events</h1>
+    <h1 style="text-align:center">Upcoming Events</h1>
 
     <div class="month">
       <ul>
@@ -202,7 +202,7 @@
       <li>3</li>
       <li>4</li>
       <li>5</li>
-      <li>6</li>
+      <li><span class="active">6</span></li>
       <li>7</li>
       <li>8</li>
       <li>9</li>
@@ -213,13 +213,13 @@
       <li><span class="active">14</span></li>
       <li>15</li>
       <li>16</li>
-      <li>17<li>
+      <li>17</li>
       <li>18</li>
       <li>19</li>
       <li>20</li>
       <li>21</li>
       <li>22</li>
-      <li>23</li>
+      <li><span class="active">23</span></li>
       <li>24</li>
       <li>25</li>
       <li>26</li>
@@ -227,18 +227,34 @@
       <li>28</li>
       <li>29</li>
       <li>30</li>
-      <li>31</li>
+      <li><span class="active">31</span></li>
     </ul>
     <br>
     <footer>
+
       <style>
+        div {
+          text-align: center;
+          color: black;
+        }
+
+        h1 {
+          color: black;
+          font-family: arial;
+          text align: center;
+        }
+      </style>
+
+      <style>
+
         .fa {
           padding: 20px;
           font-size: 30px;
           width: 50px;
           text-align: center;
           text-decoration: none;
-          margin: 5px 2px;
+          margin: 0 auto;
+
         }
 
         .fa:hover {
@@ -261,11 +277,13 @@
           background: #125688;
           color: white;
         }
-    </style>
 
+        .fa {
+          margin-left: 20px;
+        }
+    </style>
     <div class="slinks">
         <div class="navbar">
-      <h1 style="text-align:center">Social Media Links</h1>
   <p>
     <a href="https://mobile.twitter.com/MadisonAcademic" class="fa fa-twitter"></a>
     <a href="https://aboutme.google.com/u/0/" class="fa fa-google"></a>
@@ -275,7 +293,7 @@
 
 <style>
 .slinks {
-  background-color: maroon;
+  background-color: white;
 }
 </style>
     </footer>
