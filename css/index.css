@@ -1,0 +1,199 @@
+
+  body {
+    margin: 0;
+  }
+
+  .header {
+    background-image: url("../images/maroon.jpg");
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    height: 550px;
+  }
+
+  * {
+    font-family: Arial;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  .container {
+    position: relative;
+  }
+
+
+  .mySlides {
+    display: none;
+  }
+
+
+  .cursor {
+    cursor: pointer;
+  }
+
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+
+
+  .demo {
+    opacity: 0.6;
+  }
+
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+  #navbar {
+    overflow: hidden;
+     background-color: black;
+  }
+
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  #navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .content {
+    padding: 16px;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky+.content {
+    padding-top: 60px;
+  }
+
+  .slinks {
+    background-color: maroon;
+}
+
+     div {
+       text-align: center;
+       color: black;
+     }
+
+     h1 {
+       color: black;
+       font-family: arial;
+       text align: center;
+     }
+
+     .fa {
+       padding: 20px;
+       font-size: 30px;
+       width: 50px;
+       text-align: center;
+       text-decoration: none;
+       margin: 5px 2px;
+     }
+
+     .fa:hover {
+       opacity: 0.7;
+     }
+
+
+     .fa-twitter {
+       background: #55ACEE;
+       color: white;
+     }
+
+     .fa-google {
+       background: #dd4b39;
+       color: white;
+     }
+
+
+     .fa-instagram {
+       background: #125688;
+       color: white;
+     }
+
+     .slinks {
+       background-image: url("../images/maroon.jpg");
+     }
