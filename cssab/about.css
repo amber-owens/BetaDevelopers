@@ -56,12 +56,6 @@
     }
   }
 
-    .header {
-  background-color: black;
-  padding: 30px;
-  text-align: center;
-  }
-
   #navbar {
   overflow: hidden;
   background-color: black;
@@ -104,8 +98,6 @@
   html {
     box-sizing: border-box;
   }
-
-
 
   .column {
     float: left;
@@ -155,10 +147,6 @@
     background-color: #555;
   }
 
-  div {
-    text-align: center;
-    color: black;
-  }
 
   h1 {
     color: black;
