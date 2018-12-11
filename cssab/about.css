@@ -59,6 +59,7 @@
   #navbar {
   overflow: hidden;
   background-color: black;
+  
   }
 
   #navbar a {
@@ -98,7 +99,7 @@
   html {
     box-sizing: border-box;
   }
-
+S
   .column {
     float: left;
     width: 33.3%;
