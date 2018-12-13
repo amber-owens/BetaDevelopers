@@ -1,1 +1,1 @@
-# Coding1sitestructure
+Madison's Beta Club

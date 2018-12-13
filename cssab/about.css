@@ -59,7 +59,7 @@
   #navbar {
   overflow: hidden;
   background-color: black;
-  
+
   }
 
   #navbar a {
@@ -148,6 +148,10 @@ S
     background-color: #555;
   }
 
+  div {
+    text-align: center;
+    color: black;
+  }
 
   h1 {
     color: black;
@@ -184,8 +188,3 @@ S
     background: #125688;
     color: white;
   }
-
-
-    .slinks {
-      background-color: white;
-    }
